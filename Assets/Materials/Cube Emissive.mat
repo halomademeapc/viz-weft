@@ -9,8 +9,8 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Cube Emissive
   m_Shader: {fileID: 4800000, guid: 6e4ae4064600d784cac1e41a9e6f2e59, type: 3}
-  m_ShaderKeywords: _DISPLACEMENT_LOCK_TILING_SCALE _DOUBLESIDED_ON _HEIGHTMAP _SPECULAR_OCCLUSION_NONE
-    _VERTEX_DISPLACEMENT
+  m_ShaderKeywords: _DISPLACEMENT_LOCK_TILING_SCALE _DOUBLESIDED_ON _EmissiveIntensity
+    _HEIGHTMAP _HeightAmplitude _SPECULAR_OCCLUSION_NONE _VERTEX_DISPLACEMENT
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 1
@@ -156,13 +156,13 @@ Material:
     - _DstBlend: 0
     - _EmissiveColorMode: 1
     - _EmissiveExposureWeight: 0
-    - _EmissiveIntensity: 8.76
+    - _EmissiveIntensity: 0.5136466
     - _EmissiveIntensityUnit: 0
     - _EnableBlendModePreserveSpecularLighting: 1
     - _EnableFogOnTransparent: 0
     - _EnableGeometricSpecularAA: 0
     - _EnergyConservingSpecularColor: 1
-    - _HeightAmplitude: -0.019999487
+    - _HeightAmplitude: -0.014453118
     - _HeightCenter: 0.5
     - _HeightMapParametrization: 1
     - _HeightMax: 1
@@ -236,8 +236,8 @@ Material:
     - _DiffusionProfileAsset: {r: 0, g: 0, b: 0, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissiveColor: {r: 2.5429254, g: 0, b: 8.76, a: 8.76}
-    - _EmissiveColorLDR: {r: 0.2902841, g: 0, b: 1, a: 1}
+    - _EmissiveColor: {r: 0.035056304, g: 0, b: 0.5136466, a: 0.5136466}
+    - _EmissiveColorLDR: {r: 0.2897161, g: 0, b: 1, a: 1}
     - _InvPrimScale: {r: 1, g: 0.2, b: 0, a: 0}
     - _IridescenceThicknessRemap: {r: 0, g: 1, b: 0, a: 0}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}

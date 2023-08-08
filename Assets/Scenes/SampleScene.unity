@@ -433,7 +433,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   analyzer: {fileID: 1232915048}
-  minValue: 10000000
+  minValue: 10000
   maxValue: 100000000
   smoothing: 0.5
 --- !u!1 &422932044
@@ -10333,6 +10333,8 @@ GameObject:
   - component: {fileID: 1232915049}
   - component: {fileID: 1232915048}
   - component: {fileID: 1232915051}
+  - component: {fileID: 1232915052}
+  - component: {fileID: 1232915053}
   m_Layer: 0
   m_Name: Audio Processor
   m_TagString: Untagged
@@ -10480,6 +10482,46 @@ MonoBehaviour:
   maxValue: 0.06
   smoothing: 0.9
   material: {fileID: 2100000, guid: 720c17535aa0d974eb767731a08fbe70, type: 2}
+  property: _HeightAmplitude
+  intensityFix: 0
+--- !u!114 &1232915052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1232915047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52fdcfb5243ebd24bb6db4b453ded248, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  analyzer: {fileID: 1232915048}
+  minValue: 0.02
+  maxValue: -0.06
+  smoothing: 0.9
+  material: {fileID: 2100000, guid: 8bf30d96ed286a44896314959e8b09d0, type: 2}
+  property: _HeightAmplitude
+  intensityFix: 0
+--- !u!114 &1232915053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1232915047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52fdcfb5243ebd24bb6db4b453ded248, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  analyzer: {fileID: 1232915048}
+  minValue: 0
+  maxValue: 30
+  smoothing: 0.1
+  material: {fileID: 2100000, guid: 720c17535aa0d974eb767731a08fbe70, type: 2}
+  property: _EmissiveIntensity
+  intensityFix: 1
 --- !u!1 &1297650280
 GameObject:
   m_ObjectHideFlags: 0
@@ -10493,6 +10535,7 @@ GameObject:
   - component: {fileID: 1297650281}
   - component: {fileID: 1297650282}
   - component: {fileID: 1297650285}
+  - component: {fileID: 1297650286}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -10683,9 +10726,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxRotationChange: {x: 15, y: 15, z: 15}
   maxPositionChange: {x: 10, y: 2, z: 10}
-  minPosition: {x: -10, y: 2.1, z: -10}
-  maxPosition: {x: 10, y: 3, z: 10}
+  minPosition: {x: -7, y: 2.1, z: -7}
+  maxPosition: {x: 7, y: 3, z: 7}
   smoothing: 0.001
+--- !u!114 &1297650286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1297650280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45099d624c1e6c14e9514f4e5ea1ed9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _spoutName: Spout Sender
+  _keepAlpha: 0
+  _captureMethod: 0
+  _sourceCamera: {fileID: 1297650283}
+  _sourceTexture: {fileID: 0}
+  _resources: {fileID: 11400000, guid: f449ebbe2051c2e4d993eaa773a410de, type: 2}
 --- !u!1 &1348533206
 GameObject:
   m_ObjectHideFlags: 0
